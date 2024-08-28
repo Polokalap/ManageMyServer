@@ -1,0 +1,4 @@
+motd: "Hi, Player! You can change the motd config in config.yml!"
+custommotd: true
+welcome: "§e%player% joined the server!"
+quit: "§e%player% left the server!"

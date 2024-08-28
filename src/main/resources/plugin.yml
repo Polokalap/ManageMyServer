@@ -1,0 +1,25 @@
+name: ManageMyServer
+version: '1.0-SNAPSHOT'
+main: mel.polokalap.manageMyServer.ManageMyServer
+api-version: '1.20'
+authors: [ Polokalap ]
+description: Polokalap's plugin
+website: autizm.us cute-femboy.wiki
+commands:
+  rlconfig:
+    usage: /rlconfig
+    description: Reloads the plugin's config.
+  fly:
+    usage: /fly
+    description: Gives you the ability to fly.
+  vanish:
+    usage: /vanish
+    description: Makes you disappear
+    aliases: [v, van]
+permissions:
+  managemyserver.rlconfig:
+    default: op
+  managemyserver.fly:
+    default: op
+  managemyserver.vanish:
+    default: op
