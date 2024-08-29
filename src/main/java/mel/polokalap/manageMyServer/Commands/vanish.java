@@ -28,7 +28,7 @@ public class vanish implements CommandExecutor {
                 }
                 else {
                     player.sendMessage(ChatColor.GREEN + "Players can no longer see you!");
-                    player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 8000000, 1, true, true, false));
+                    player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 8000000, 1, true, false, false));
                     for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
                         onlinePlayer.hidePlayer(ManageMyServer.getInstance(), player);
                         onlinePlayer.sendMessage(ManageMyServer.getInstance().getConfig().getString("quit").replaceAll("%player%", player.getName()));

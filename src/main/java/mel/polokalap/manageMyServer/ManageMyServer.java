@@ -1,11 +1,7 @@
 package mel.polokalap.manageMyServer;
 
-import mel.polokalap.manageMyServer.Commands.fly;
-import mel.polokalap.manageMyServer.Commands.rlconfig;
-import mel.polokalap.manageMyServer.Commands.vanish;
-import mel.polokalap.manageMyServer.Listeners.join;
-import mel.polokalap.manageMyServer.Listeners.modt;
-import mel.polokalap.manageMyServer.Listeners.quit;
+import mel.polokalap.manageMyServer.Commands.*;
+import mel.polokalap.manageMyServer.Listeners.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ManageMyServer extends JavaPlugin {
@@ -27,12 +23,19 @@ public final class ManageMyServer extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new modt(), this);
         getServer().getPluginManager().registerEvents(new join(), this);
         getServer().getPluginManager().registerEvents(new quit(), this);
+        getServer().getPluginManager().registerEvents(new ToggleChatEvent(), this);
+        getServer().getPluginManager().registerEvents(new ToggleBlockBreak(), this);
     }
 
     public void register_commands() {
         getCommand("rlconfig").setExecutor(new rlconfig());
         getCommand("fly").setExecutor(new fly());
         getCommand("vanish").setExecutor(new vanish());
+        getCommand("discord").setExecutor(new discord());
+        getCommand("sit").setExecutor(new sit());
+        getCommand("kickall").setExecutor(new kickall());
+        getCommand("togglechat").setExecutor(new toggleChat());
+        getCommand("toggleblockbreak").setExecutor(new toggleBlockBreak());
     }
 
     @Override

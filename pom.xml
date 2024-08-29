@@ -6,7 +6,7 @@
 
     <groupId>mel.polokalap</groupId>
     <artifactId>ManageMyServer</artifactId>
-    <version>1.0-RELEASE</version>
+    <version>1.1-RELEASE</version>
     <packaging>jar</packaging>
 
     <name>ManageMyServer</name>

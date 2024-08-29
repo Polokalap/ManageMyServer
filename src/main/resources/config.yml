@@ -2,3 +2,6 @@ motd: "Hi, Player! You can change the motd config in config.yml!"
 custommotd: true
 welcome: "§e%player% joined the server!"
 quit: "§e%player% left the server!"
+discord: "§eJoin our discord! §3https://edit.me/in/config.yml§e!"
+chat: true
+block: true

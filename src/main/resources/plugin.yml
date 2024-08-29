@@ -1,5 +1,5 @@
 name: ManageMyServer
-version: '1.0-SNAPSHOT'
+version: '1.1-RELEASE'
 main: mel.polokalap.manageMyServer.ManageMyServer
 api-version: '1.20'
 authors: [ Polokalap ]
@@ -16,6 +16,22 @@ commands:
     usage: /vanish
     description: Makes you disappear
     aliases: [v, van]
+  discord:
+    usage: /discord
+    description: Sends you a discord link
+    aliases: [dc]
+  sit:
+    usage: /sit
+    description: Makes you sit
+  kickall:
+    usage: /kickall
+    description: Kicks all players
+  togglechat:
+    usage: /togglechat
+    description: Disables the chat
+  toggleblockbreak:
+    usage: /toggleblockbreak
+    description: Disables block breaking/placing
 permissions:
   managemyserver.rlconfig:
     default: op
@@ -23,3 +39,11 @@ permissions:
     default: op
   managemyserver.vanish:
     default: op
+  managemyserver.sit:
+    default: op
+  managemyserver.kickall:
+    default: op
+  managemyserver.togglechat:
+    default: op
+    managemyserver.toggleblockbreak:
+      default: op
