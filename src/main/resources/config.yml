@@ -5,3 +5,5 @@ quit: "§e%player% left the server!"
 discord: "§eJoin our discord! §3https://edit.me/in/config.yml§e!"
 chat: true
 block: true
+webhook: "https://your.discord/url/here"
+log: false

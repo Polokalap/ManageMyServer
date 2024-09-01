@@ -25,6 +25,7 @@ public final class ManageMyServer extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new quit(), this);
         getServer().getPluginManager().registerEvents(new ToggleChatEvent(), this);
         getServer().getPluginManager().registerEvents(new ToggleBlockBreak(), this);
+        getServer().getPluginManager().registerEvents(new chat(), this);
     }
 
     public void register_commands() {
@@ -36,6 +37,7 @@ public final class ManageMyServer extends JavaPlugin {
         getCommand("kickall").setExecutor(new kickall());
         getCommand("togglechat").setExecutor(new toggleChat());
         getCommand("toggleblockbreak").setExecutor(new toggleBlockBreak());
+        getCommand("chatlog").setExecutor(new chatLog());
     }
 
     @Override

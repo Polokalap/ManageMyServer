@@ -1,5 +1,5 @@
 name: ManageMyServer
-version: '1.1-RELEASE'
+version: '1.2-RELEASE'
 main: mel.polokalap.manageMyServer.ManageMyServer
 api-version: '1.20'
 authors: [ Polokalap ]
@@ -32,6 +32,9 @@ commands:
   toggleblockbreak:
     usage: /toggleblockbreak
     description: Disables block breaking/placing
+  chatlog:
+    usage: /chatlog
+    description: Toggles chat logging
 permissions:
   managemyserver.rlconfig:
     default: op
@@ -45,5 +48,7 @@ permissions:
     default: op
   managemyserver.togglechat:
     default: op
-    managemyserver.toggleblockbreak:
-      default: op
+  managemyserver.toggleblockbreak:
+    default: op
+  managemyserver.chatlog:
+    default: op
